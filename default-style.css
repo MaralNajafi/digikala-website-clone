@@ -1,0 +1,210 @@
+@font-face {
+	font-family: Vazir;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/Vazir.eot');
+	src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/Vazir.woff2') format('woff2'), 
+		 url('fonts/Vazir.woff') format('woff'), 
+		 url('fonts/Vazir.ttf') format('truetype');
+}
+@font-face {
+	font-family: Vazir;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/Vazir-Bold.eot');
+	src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/Vazir-Bold.woff2') format('woff2'), 
+		 url('fonts/Vazir-Bold.woff') format('woff'), 
+		 url('fonts/Vazir-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Vazir;
+	font-style: normal;
+	font-weight: light;
+	src: url('fonts/Vazir-Light.eot');
+	src: url('fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/Vazir-Light.eot.woff2') format('woff2'), 
+		 url('fonts/Vazir-Light.eot.woff') format('woff'), 
+		 url('fonts/Vazir-Light.eot.ttf') format('truetype');
+}
+
+
+:root {
+    --global-padding: 16px;
+    --mid-padding: 8px;
+    --small-radius: 4px;
+    --medium-radius: 8px;
+    --large-radius: 16px;
+
+    --font-family: Vazir,sans-serif;
+
+    --color-white: #fff;
+    --color-black: #0c0c0c;
+    
+    --color-neutral-100: #f0f0f1;
+    --color-neutral-200: #e0e0e2;
+    --color-neutral-300: #c0c2c5;
+    --color-neutral-400: #a1a3a8;
+    --color-neutral-500: #81858b;
+    --color-neutral-600: #62666d;
+    --color-neutral-700: #424750;
+    --color-neutral-800: #232933;
+
+    --color-blue-300: #9ee3f0;
+    --color-blue-500: #87d3e1;
+    --color-blue-700: #00bfd6;
+    --color-blue-800: #008eb2;
+
+    --color-brand: #e6123d;
+    --color-brand-light: #ef4056;
+
+    --color-fake: #f57f17;
+    --color-fake-rgb: 249,168,37;
+
+    --color-icon-rating-0-2: #f9bc00;
+    --color-icon-rating-2-3: #b1b64d;
+    --color-icon-rating-3-4: #65aa57;
+    --color-icon-rating-4-5: #00a049;
+
+    --color-neutral-100-rgb: 240,240,241;
+
+    --box-shadow-base:0 2px 2px -2px rgba(0,0,0,.2);
+    --box-shadow-item: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: var(--font-family);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-grow-1{
+    flex-grow: 1;
+}
+.grid-center{
+    display: grid;
+    place-items: center;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.jc-spb{
+    justify-content: space-between;
+}
+
+.jc-fe{
+    justify-content: flex-end;
+}
+
+.jc-fs{
+    justify-content: flex-start;
+}
+
+
+.p16px{
+    padding: 16px;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-none{
+    display: none;
+}
+
+.height-100{
+    height: 100%;
+}
+
+.g5{
+    gap: 5px;
+}
+
+.g8{
+    gap: 8px;
+}
+
+.g4{
+    gap:4px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.margin-r-au{
+    margin-inline-start: auto;
+}
+
+.no-border-l{
+    border-left: none !important;
+}
+
+.no-border-b{
+    border-bottom: none !important;
+}
