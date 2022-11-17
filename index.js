@@ -1,4 +1,4 @@
-import tabSwitcher from '/tabSwitcher.js';
+import tabSwitcher from './tabSwitcher.js';
 console.log("Hello, from JavaScript!");
 
 //tabSwitcher variables
