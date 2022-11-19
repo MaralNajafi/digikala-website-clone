@@ -20,10 +20,13 @@ At first glance, one might find it easy to develop but once you jump into it you
 
 You also might want to **give it a try** specially as a beginner or a junior front-end developer. Here is why:
 
-- It is full of so many details and challenges which make you wonder how they did that! So, you eventually start to come up with ideas and dive deeply into its code to find out the solution.
-- When you go through the code you will find different ways of structuring and categorizing the data and how html tags can be used in so many various ways that you haven’t ever thought of that.
-- Also, since it’s a heavy project with so many nested "div"s, you might want to adopt a new approach on the way you style html tags. And believe me, you’re going to use all css selectors ever existed!
-- If you are struggling with flex-box properties this project is a good practice to deeply understand the usage of flex. Specially when it comes to a responsive style.
+- It is full of **so many details and challenges** which make you wonder how they did that! So, you eventually start to come up with ideas and dive deeply into its code to find out the solution.  
+
+- When you go through the code you **will find different ways of structuring and categorizing the data** and how html tags can be used in so many various ways that you haven’t ever thought of that.   
+
+- Also, since it’s a heavy project with so many nested "div"s, **you might want to adopt a new approach on the way you style** html tags. And believe me, you’re going to use all css selectors ever existed!   
+
+- If you are struggling with flex-box properties **this project is a good practice to deeply understand the usage of flex**. Specially when it comes to a responsive style.
 
 ## Experiences I gained
 
