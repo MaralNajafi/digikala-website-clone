@@ -110,7 +110,7 @@ Isn’t it just great??
 
 ### JavaScript
 
-I don’t actually have anything to mentions about its JavaScript as I haven’t yet done anything special with it (just switching between different tabs). But I may need to do some other programming later to finish the project.  
+I don’t actually have anything to mention about its JavaScript as I haven’t yet done anything special with it (just switching between different tabs). But I may need to do some other programming later to finish the project.  
 
 ### Contribution
 
