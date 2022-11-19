@@ -47,7 +47,9 @@ Still, this does not mean that you should overuse inline styling. I myself tried
 
 Have a *reference css file*! I’ve seen so many developers that have a *reset css file* which resets all default styling of the elements. Such as padding, margin, list style and etc. It’s a good idea to have such a file and linking it to your html file before linking any other stylesheets.   
 
-Thanks to the developers of this website and also @kevin-powell’s tips, I decided to go further and create a reference css file which contains some class names with special stylings. Bellow you can see some examples of it:
+Thanks to the developers of this website and also @kevin-powell’s tips, I decided to go further and create a reference css file which contains some class names with special stylings. Bellow you can see some examples of it:   
+
+```
     <style>
         .d-flex{
             display: flex;
@@ -66,9 +68,10 @@ Thanks to the developers of this website and also @kevin-powell’s tips, I deci
             flex-direction: row;
         }
     </style>
+```
 
-
-Now instead of this:   
+Now instead of this:  
+```
     <style>
     nav{
         display: flex;
@@ -83,11 +86,14 @@ Now instead of this:
         flex-direction: row;
     }
     </style>
+```
 
 You can do this:  
+```
     <header class="flex-row"></header>
     <nav class="flex-row"></nav>
     <div class="main-container flex-row"></div>  
+```
 
 
 Isn’t it just great??  
