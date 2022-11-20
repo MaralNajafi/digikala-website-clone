@@ -34,7 +34,7 @@ I may not be able to put all my experiences into words as I’m not a good write
 
 ### Html
 
-One might think of html as the easiest part of a web development! However, when it comes to structuring and categorizing heavy data with a special styling and realizing how it affects your further development with other languages such as JavaScript or back-end programming languages, you might want to change your view and actually come to terms with the fact that Html is the determinative foundation of your website!   
+One might think of html as the easiest part of a web development! However, when it comes to structuring and organizing heavy data with a special styling and realizing how it affects your further development with other languages such as JavaScript or back-end programming languages, you might want to change your view and actually come to terms with the fact that Html is the determinative foundation of your website!   
 
 You must pick html tags wisely and try to be as efficient as possible. This project actually helps you with how to code efficiently. As long as you care about the functionality of your website not just how it looks!   
 
@@ -48,9 +48,9 @@ Still, this does not mean that you should overuse inline styling. I myself tried
 
 #### The best thing I learned
 
-Have a *reference css file*! I’ve seen so many developers that have a *reset css file* which resets all default styling of the elements. Such as padding, margin, list style and etc. It’s a good idea to have such a file and linking it to your html file before linking any other stylesheets.   
+Have a *reference css file*! I’ve seen so many developers that have a *reset css file* which resets all default styling of the elements. Such as padding, margin, list style and etc. It’s a good idea to have such a file and to link it to your html file before linking any other stylesheets.   
 
-Thanks to the developers of this website and also @kevin-powell’s tips, I decided to go further and create a reference css file which contains some class names with special stylings. Bellow you can see some examples of it:   
+Thanks to the developers of this website and also [@kevin-powell](https://github.com/kevin-powell)’s tips, I decided to go further and create a reference css file which contains some class names with special stylings. Bellow you can see some examples of it:   
 
 ```
     <style>
@@ -99,14 +99,15 @@ You can do this:
 ```
 
 
-Isn’t it just great??  
+These classes are called **utility classes**
 
-**Benefits**:
+##### Benefits of utility classes
+
 - It saves you a lot of time styling
 - Helps you have a cleaner, more readable code
 - keeps your code DRY (Don’t Repeat Yourself)
 - No need to come up with thousands of special class names specially in heavy projects
-- No need to try to select an element using weird long css selectors just for a few general stylings used throughout all of your code.
+- No need to try to select an element using weird long css selectors just for a few general stylings.
 
 ### JavaScript
 
@@ -114,4 +115,4 @@ I don’t actually have anything to mention about its JavaScript as I haven’t 
 
 ### Contribution
 
-Thank you so much for reading all these.  I am really trying to improve my skills in front-end web development so **any suggestions, tips and recommendations are welcomed**. So please feel free to contribute and pull a request or contact me via my email address: <marawlnajafi@gmail.com>
+Thank you so much for reading all these. I am really trying to improve my skills in front-end web development so **any suggestions, tips and recommendations are welcomed**. So please feel free to contribute and pull a request or contact me via my email address: <marawlnajafi@gmail.com>
