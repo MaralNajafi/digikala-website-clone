@@ -552,6 +552,7 @@ html{
     background-color: rgba(var(--color-fake-rgb), 0.2);
     border-radius: 12px;
     font-size: 1.1em;
+    font-weight: bold;
     color: var(--color-fake);
     height: 25px;
 
@@ -576,8 +577,12 @@ html{
     font-size: 1.1em;
     color: var(--color-neutral-700);
 }
-.status{
+[data-product-status="available-at-digikala"]{
     color: var(--color-neutral-500);
+}
+
+[data-product-status="leftover-at-digikala"]{
+    color: var(--color-brand);
 }
 
 .product-price{
@@ -624,4 +629,12 @@ html{
 
 .white-circle{
     background-color: var(--color-white);
+}
+
+.blue-circle{
+    background-color: var(--color-blue);
+}
+
+.gold-circle{
+    background-color: var(--color-gold);
 }
