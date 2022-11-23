@@ -25,9 +25,9 @@
 	font-weight: light;
 	src: url('fonts/Vazir-Light.eot');
 	src: url('fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'), 
-		 url('fonts/Vazir-Light.eot.woff2') format('woff2'), 
-		 url('fonts/Vazir-Light.eot.woff') format('woff'), 
-		 url('fonts/Vazir-Light.eot.ttf') format('truetype');
+		 url('fonts/Vazir-Light.woff2') format('woff2'), 
+		 url('fonts/Vazir-Light.woff') format('woff'), 
+		 url('fonts/Vazir-Light.ttf') format('truetype');
 }
 
 
