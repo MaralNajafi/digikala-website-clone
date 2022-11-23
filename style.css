@@ -174,7 +174,7 @@ html{
 .categories-sub-menu{
     position: absolute;
     right: 0;
-    top: 36px;
+    top: 35px;
     z-index: 1;
     width: auto;
     display: none;
