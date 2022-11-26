@@ -198,6 +198,11 @@ button{
     height: 100%;
 }
 
+.h-max-360{
+    max-height: 360px !important;
+}
+
+
 .w-100{
     width: 100%;
 }
@@ -212,4 +217,13 @@ button{
 
 .no-border-b{
     border-bottom: none !important;
+}
+
+
+.overflow-y-au{
+    overflow-y: auto !important;
+}
+
+.visibility-hid{
+    visibility: hidden;
 }
