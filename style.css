@@ -432,10 +432,13 @@ html{
 
 .product-filter-items{
     width: 100%;
-    max-height: 360px;
-    overflow-y: auto;
+    max-height: 0;
     padding-top: 4px;
     padding-inline: 20px;
+    overflow-y: auto;
+    transition: 
+    max-height 250ms ease-in,
+    visibility 250ms ease-in;
 }
 
 .product-filter-item-wrapper{
@@ -515,6 +518,39 @@ html{
     width: 20px;
     outline: 1px solid var(--color-neutral-200);
     border-radius: 50%;
+}
+
+.price-range{
+    margin-top: 8px;
+}
+
+.price-range > div{
+    height: 5rem;
+}
+
+.price-range > div > div:has(input[type='text']){
+    border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.price-range input[type='text']{
+    direction: ltr;
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 2.6rem;
+    font-weight: bold;
+    caret-color: var(--color-brand);
+    padding-inline: 16px;
+}
+
+.price-range input:focus{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.price-range input[type='number']::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
 
 /* products */
