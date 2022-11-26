@@ -57,3 +57,17 @@ for (let i = 0; i < dataCheck.length; i++) {
     })
     
 }
+
+// no border on the left side of products at the left edge
+// variables
+const products = document.querySelectorAll(".product");
+
+for (let i = 0; i < products.length; i++) {
+    const product = products[i];
+    let productNo = i + 1
+    if (productNo % 4 === 0) {
+        product.classList.add("no-border-l")
+    }
+    
+}
+
