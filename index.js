@@ -40,7 +40,8 @@ for (let i = 0; i < filterTitle.length; i++) {
     const element = filterTitle[i];
 
     element.addEventListener("click", function(){
-        filterItems[i].classList.toggle("d-none");
+        filterItems[i].classList.toggle("h-max-360");
+        filterItems[i].classList.toggle("visibility-hid");
     })
     
 }
@@ -70,4 +71,5 @@ for (let i = 0; i < products.length; i++) {
     }
     
 }
+
 
