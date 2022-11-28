@@ -524,15 +524,11 @@ html{
     margin-top: 8px;
 }
 
-.price-range > div{
-    height: 5rem;
-}
-
-.price-range > div > div:has(input[type='text']){
+.price-range > div > div:has(input[type='number']){
     border-bottom: 1px solid var(--color-neutral-200);
 }
 
-.price-range input[type='text']{
+.price-range input[type='number']{
     direction: ltr;
     border: none;
     background: none;
@@ -551,6 +547,46 @@ html{
 
 .price-range input[type='number']::-webkit-inner-spin-button{
     -webkit-appearance: none;
+}
+
+.range-wrapper .slider{
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--color-neutral-200);
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+.range-wrapper .slider .progress{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    height: 100%;
+    border-radius: 0.3rem;
+    background-color: var(--color-blue-600);
+}
+
+.range-input-wrapper{
+    position: relative;
+}
+
+.range-input-wrapper input[type="range"]{
+    position: absolute;
+    top: -5px;
+    height: 0.5rem;
+    width: 100%;
+    background: none;
+    -webkit-appearance: none;
+    pointer-events: none;
+}
+
+.range-input-wrapper input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--color-blue-600);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    pointer-events: auto;
 }
 
 /* products */
@@ -674,3 +710,4 @@ html{
 .gold-circle{
     background-color: var(--color-gold);
 }
+
