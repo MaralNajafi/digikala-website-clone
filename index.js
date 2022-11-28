@@ -86,7 +86,15 @@ priceInputs.forEach(input =>{
 //changing price input based on range input
 
 minRange.addEventListener("input", function(){
+    const maxRangeVal = +maxRange.value;
     const minRangeVal = +minRange.value;
+    const rangeValGap = maxRangeVal - minRangeVal;
+
+    if (rangeValGap < 0) {
+        minRange.value = minPrice.value.replace(/[^0-9]/g, "");
+        return
+    }
+
     minPrice.value = minRangeVal.toLocaleString();
     let rightD = minRangeVal * 100 / maxValue;
     sliderProgress.style.right = `${rightD}%`;
@@ -94,6 +102,14 @@ minRange.addEventListener("input", function(){
 
 maxRange.addEventListener("input", function(){
     const maxRangeVal = +maxRange.value;
+    const minRangeVal = +minRange.value;
+    const rangeValGap = maxRangeVal - minRangeVal;
+
+    if (rangeValGap < 0) {
+        maxRange.value = maxPrice.value.replace(/[^0-9]/g, "");
+        return
+    }
+
     maxPrice.value = maxRangeVal.toLocaleString();
     let leftD = -((maxRangeVal * 100 / maxValue) - 100);
     sliderProgress.style.left = `${leftD}%`;
