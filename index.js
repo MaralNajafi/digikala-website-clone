@@ -102,7 +102,7 @@ maxRange.addEventListener("input", function(){
 //changing range input based on price input
 
 minPrice.addEventListener("input", function(){
-    const minPriceVal = minPrice.value;
+    const minPriceVal = minPrice.value.replace(/[^0-9]/g, "");
     minRange.value = minPriceVal;
     let rightD = minPriceVal * 100 / maxValue;
     
@@ -114,7 +114,7 @@ minPrice.addEventListener("input", function(){
 })
 
 maxPrice.addEventListener("input", function(){
-    const maxPriceVal = maxPrice.value;
+    const maxPriceVal = maxPrice.value.replace(/[^0-9]/g, "");
     maxRange.value = maxPriceVal;
     let leftD = -((maxPriceVal * 100 / maxValue) - 100);
     
