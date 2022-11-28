@@ -961,12 +961,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-filter-items visibility-hid flex-col g8">
-                                <div class="price-range">
+                            <div class="product-filter-items h-max-360 price-range flex-col g16">
                                     <div class="flex-row jc-spb g4">
                                         <div class="d-flex ai-center" style="color: var(--color-neutral-500); font-size: 1.7rem;"><span>از</span></div>
                                         <div class="flex-grow-1 d-flex ai-center">
-                                            <input type="text" inputmode="numeric" value="۰">
+                                            <input type="number" inputmode="numeric" value="0" class="d-block price-input" id="price-min">
                                         </div>
                                         <div class="d-flex ai-center">
                                             <svg style="width: 18px; height: 18px; fill: var(--color-neutral-700);"><use xlink:href="#toman"></use></svg>
@@ -975,17 +974,28 @@
                                     <div class="flex-row jc-spb g4">
                                         <div class="d-flex ai-center" style="color: var(--color-neutral-500); font-size: 1.7rem;"><span>تا</span></div>
                                         <div class="flex-grow-1 d-flex ai-center">
-                                            <input type="text" inputmode="numeric" class="d-block" value="۲۱,۳۹۹,۹۰۰">
+                                            <input type="number" inputmode="numeric" class="d-block price-input" id="price-max" value="21399900">
                                         </div>
                                         <div class="d-flex ai-center">
                                             <svg style="width: 18px; height: 18px; fill: var(--color-neutral-700);"><use xlink:href="#toman"></use></svg>
                                         </div>
                                     </div>
-                                    <div class="flex-row">
-                                        <div>
+                                    <div class="flex-col g16">
+                                        <div class="range-wrapper">
+                                            <div class="slider">
+                                                <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input-wrapper">
+                                                <input type="range" class="range-input" id="range-min" min="0" max="21399900" value="0" step="100">
+
+                                                <input type="range" class="range-input" id="range-max" min="0" max="21399900" value="21399900" step="100">
+                                              </div>
+                                        </div>
+                                        <div class="flex-row jc-spb">
+                                            <div style="color: var(--color-neutral-500); font-weight: bold; font-size: 1.2rem;">ارزانترین</div>
+                                            <div style="color: var(--color-neutral-500); font-weight: bold; font-size: 1.2rem;">گرانترین</div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="product-filter">
