@@ -59,8 +59,11 @@ for (let i = 0; i < dataCheck.length; i++) {
     
 }
 
+
+
 //price range handler
 //variables
+const priceInputs = document.querySelectorAll(".price-input");
 const minPrice = document.getElementById("price-min");
 const maxPrice = document.getElementById("price-max");
 const minRange = document.getElementById("range-min");
@@ -69,19 +72,29 @@ const maxValue = 21399900;
 const minValue = 0;
 const sliderProgress = document.querySelector(".slider .progress")
 
+// thousand seperator
+priceInputs.forEach(input =>{
+    input.addEventListener('input', ()=>{
+        const inputVal = input.value.replace(/[^0-9]/g, "");
+        const inputValNum = +inputVal;
+        input.value = inputValNum.toLocaleString();    
+    })
+})
+
+
 
 //changing price input based on range input
 
 minRange.addEventListener("input", function(){
-    const minRangeVal = minRange.value;
-    minPrice.value = minRangeVal;
+    const minRangeVal = +minRange.value;
+    minPrice.value = minRangeVal.toLocaleString();
     let rightD = minRangeVal * 100 / maxValue;
     sliderProgress.style.right = `${rightD}%`;
 })
 
 maxRange.addEventListener("input", function(){
-    const maxRangeVal = maxRange.value;
-    maxPrice.value = maxRangeVal;
+    const maxRangeVal = +maxRange.value;
+    maxPrice.value = maxRangeVal.toLocaleString();
     let leftD = -((maxRangeVal * 100 / maxValue) - 100);
     sliderProgress.style.left = `${leftD}%`;
 })
@@ -113,6 +126,7 @@ maxPrice.addEventListener("input", function(){
 })
 
 
+
 // no border on the left side of products at the left edge
 // variables
 const products = document.querySelectorAll(".product");
@@ -127,3 +141,6 @@ for (let i = 0; i < products.length; i++) {
 }
 
 
+let testNum = 12356;
+let testNumStr = testNum.toLocaleString();
+console.log(testNumStr);
