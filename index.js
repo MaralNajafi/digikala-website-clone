@@ -140,7 +140,3 @@ for (let i = 0; i < products.length; i++) {
     
 }
 
-
-let testNum = 12356;
-let testNumStr = testNum.toLocaleString();
-console.log(testNumStr);
