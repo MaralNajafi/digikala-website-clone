@@ -54,6 +54,7 @@
 
     --color-blue-300: #9ee3f0;
     --color-blue-500: #87d3e1;
+    --color-blue-600: #19bfd3;
     --color-blue-700: #00bfd6;
     --color-blue-800: #008eb2;
     --color-blue: rgb(33, 150, 243);
@@ -188,6 +189,10 @@ button{
 
 .g4{
     gap:4px;
+}
+
+.g16{
+    gap:16px;
 }
 
 .cursor-pointer{
