@@ -5,18 +5,21 @@ console.log("Hello, from JavaScript!");
 const redLine = document.querySelector(".red-line");
 const navItems = document.querySelectorAll(".nav-right-item");
 
-navItems.forEach(navItem =>{
-    let redLineWidth = navItem.offsetWidth;
-    let redLineLeft = navItem.offsetLeft;
-    navItem.addEventListener("mouseover", () =>{
-        redLine.style.width = `${redLineWidth}px`;
-        redLine.style.transform = `translateX(${redLineLeft}px)`;
+setTimeout(() => {
+    navItems.forEach(navItem =>{
+        console.log(navItem.offsetLeft);
+        let redLineWidth = navItem.offsetWidth;
+        let redLineLeft = navItem.offsetLeft;
+        navItem.addEventListener("mouseover", () =>{
+            redLine.style.width = `${redLineWidth}px`;
+            redLine.style.transform = `translateX(${redLineLeft}px)`;
+        })
+        navItem.addEventListener("mouseout", () =>{
+            redLine.style.width = "0";
+        })
+    
     })
-    navItem.addEventListener("mouseout", () =>{
-        redLine.style.width = "0";
-    })
-
-})
+}, 0);
 
 
 //tabSwitcher variables
