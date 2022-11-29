@@ -7,7 +7,6 @@ const navItems = document.querySelectorAll(".nav-right-item");
 
 setTimeout(() => {
     navItems.forEach(navItem =>{
-        console.log(navItem.offsetLeft);
         let redLineWidth = navItem.offsetWidth;
         let redLineLeft = navItem.offsetLeft;
         navItem.addEventListener("mouseover", () =>{
