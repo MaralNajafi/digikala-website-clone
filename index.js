@@ -11,7 +11,7 @@ setTimeout(() => {
         let redLineLeft = navItem.offsetLeft;
         navItem.addEventListener("mouseover", () =>{
             redLine.style.width = `${redLineWidth}px`;
-            redLine.style.transform = `translateX(${redLineLeft}px)`;
+            redLine.style.left = `${redLineLeft}px`;
         })
         navItem.addEventListener("mouseout", () =>{
             redLine.style.width = "0";
