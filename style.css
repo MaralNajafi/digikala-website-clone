@@ -317,7 +317,6 @@ html{
     height: 1.5px;
     background-color: var(--color-brand);
     border-radius: 16px;
-    transform: translateX(0);
     transition: all 250ms;
 }
 
