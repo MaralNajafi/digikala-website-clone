@@ -114,10 +114,6 @@ html{
     white-space: nowrap;
 }
 
-.nav-box{
-    color: var(--color-neutral-600);
-    font-size: 12px;
-}
 
 .main-nav .seperate-line{
     height: 16px;
@@ -136,10 +132,6 @@ html{
     margin-inline-start: 4px;
 }
 
-.more-options{
-    font-size: 12px;
-    color: var(--color-neutral-600);
-}
 .before-line{
     position: relative;
 }
@@ -304,34 +296,29 @@ html{
 }
 
 
-[data-nav-hover]{
+.nav-right-item{
+    font-size: 1.2rem;
+    color: var(--color-neutral-600);
     height: 100%;
     position: relative;
-    padding-inline: 12px;
-    padding-block: 6px;
+    padding: 6px 12px;
 }
 
-.red-und-he::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-brand);
-    border-radius: 16px;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 250ms ease-in;
-}
-
-.red-und-he:hover::after{
-    transform: scaleX(1);
-    transform-origin: right;
-}
 
 .main-nav-right{
     position: relative;
+}
+
+.red-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--color-brand);
+    border-radius: 16px;
+    transform: translateX(0);
+    transition: all 250ms;
 }
 
 
@@ -710,4 +697,3 @@ html{
 .gold-circle{
     background-color: var(--color-gold);
 }
-
