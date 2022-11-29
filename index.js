@@ -1,10 +1,30 @@
 console.log("Hello, from JavaScript!");
 
+//header nav special hover effect
+//variables
+const redLine = document.querySelector(".red-line");
+const navItems = document.querySelectorAll(".nav-right-item");
+
+navItems.forEach(navItem =>{
+    console.log(navItem.offsetLeft);
+    let redLineWidth = navItem.offsetWidth;
+    let redLineLeft = navItem.offsetLeft;
+    navItem.addEventListener("mouseover", () =>{
+        redLine.style.width = `${redLineWidth}px`;
+        redLine.style.transform = `translateX(${redLineLeft}px)`;
+    })
+    navItem.addEventListener("mouseout", () =>{
+        redLine.style.width = "0";
+    })
+
+})
+
+
 //tabSwitcher variables
 const menuItems = document.querySelectorAll('[data-tab-target]');
 const menueContents = document.querySelectorAll('[data-tab-content]');
 const sortItems = document.querySelectorAll('[data-sort-item]');
-const navItemshover = document.querySelectorAll('[data-nav-hover]');
+
 
 function tabSwitcher(tabs,className,tabsContent,event) {
     for (let i = 0; i < tabs.length; i++) {
@@ -29,7 +49,6 @@ function tabSwitcher(tabs,className,tabsContent,event) {
 
 tabSwitcher(menuItems,"active",menueContents,"mouseover");
 tabSwitcher(sortItems,"active-sort",null,"click");
-tabSwitcher(navItemshover,"red-und-he",null,"mouseover");
 
 //product filter items visibility
 //variables
@@ -155,4 +174,3 @@ for (let i = 0; i < products.length; i++) {
     }
     
 }
-
