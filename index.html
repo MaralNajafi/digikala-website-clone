@@ -51,12 +51,25 @@
                         <div class="right">
                             <img src="media/logo.svg" alt="digikala brand">
                         </div>
-                        <div class="middle">
-                            <div class="search-box-display flex-row ">
-                                <div class="search-sign">
-                                    <svg style="width: 24px; height: 24px;"><use xlink:href="#searchSearch"></use></svg>
+                        <div class="middle flex-grow-1 position-rel">
+                            <div class="search-box-display flex-row ai-center ">
+                                <div class="search-sign d-flex">
+                                    <svg style="
+                                    width: 24px;
+                                    height: 24px;
+                                    fill: var(--color-neutral-400); margin-inline-start: 8px;"><use xlink:href="#searchSearch"></use></svg>
                                 </div>
                                 <div>جستجو</div>
+                            </div>
+                            <div class="search-box-wrapper flex-col">
+                                <div class="search-box flex-row ai-center">
+                                    <div class="search-sign d-flex">
+                                        <svg style="width: 24px; height: 24px; fill: var(--color-neutral-700);"><use xlink:href="#searchSearch"></use></svg>
+                                    </div>
+                                    <div class="w-100">
+                                        <input class="input-reset w-100" type="text" placeholder="جستجو">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="left">
@@ -573,7 +586,7 @@
                         </div>
                        
                         <div class="product-filter">
-                            <div class="product-filter-title">
+                            <div class="product-filter-title inc-sub-item">
                                 <div class="flex-row jc-spb">
                                     <div class="d-flex ai-center"><p>برند</p></div>
                                     <div class="d-flex ai-center">
@@ -739,7 +752,7 @@
                                     </div>
                                 </div>
                                 <div class="product-filter-item-wrapper flex-row">
-                                    <div class="product-filter-item w-100 flex-row">
+                                    <div class="product-filter-item w-100 flex-row no-border-b">
                                         <div class="d-flex ai-center">
                                             <label for="" class="d-flex ai-center" data-check-target="#Usmas">
                                                 <input type="checkbox">
@@ -759,7 +772,7 @@
                             </div>
                         </div>
                         <div class="product-filter">
-                            <div class="product-filter-title">
+                            <div class="product-filter-title inc-sub-item">
                                 <div class="flex-row jc-spb">
                                     <div class="d-flex ai-center"><p>رنگ</p></div>
                                     <div class="d-flex ai-center">
@@ -933,7 +946,7 @@
                                     </div>
                                 </div>
                                 <div class="product-filter-item-wrapper flex-row">
-                                    <div class="product-filter-item w-100 flex-row">
+                                    <div class="product-filter-item w-100 flex-row no-border-b">
                                         <div class="d-flex ai-center">
                                             <label for="" class="d-flex ai-center" data-check-target="#Usmas">
                                                 <input type="checkbox">
@@ -954,7 +967,84 @@
                             </div>
                         </div>
                         <div class="product-filter">
-                            <div class="product-filter-title">
+                            <div class="product-filter-title inc-sub-item">
+                                <div class="flex-row jc-spb">
+                                    <div class="d-flex ai-center g8">
+                                        <p>خدمات دیجی&zwnj;پلاس</p>
+                                        <svg style="width: 18px; height: 18px; fill: var(--color-purple);"><use xlink:href="#plus"></use></svg>
+                                    </div>
+                                    <div class="d-flex ai-center">
+                                        <svg style="width: 24px; height: 24px"><use xlink:href="#expandMore"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-filter-items visibility-hid ">
+                                <div class="product-filter-item-wrapper flex-row">
+                                    <div class="product-filter-item w-100 flex-row">
+                                        <div class="d-flex ai-center">
+                                            <label for="" class="d-flex ai-center" data-check-target>
+                                                <input type="checkbox">
+                                                <span class="d-flex jc-center ai-center" data-check-status>
+                                                    <div class="d-flex ai-center">
+                                                        <svg style="width: 10px; height: 10px; fill: var(--color-white);"><use xlink:href="#check"></use></svg>
+                                                    </div>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="flex-row jc-spb w-100">
+                                            <p>کالا&zwnj;های دارای    هدیه نقدی</p>
+                                            <div class="d-flex ai-center">
+                                                <img class="d-inline-block" width="24" height="24" alt="" style="object-fit: contain;" src="/media/7a406ae2.png">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-filter-item-wrapper flex-row">
+                                    <div class="product-filter-item w-100 flex-row no-border-b">
+                                        <div class="d-flex ai-center">
+                                            <label for="" class="d-flex ai-center" data-check-target>
+                                                <input type="checkbox">
+                                                <span class="d-flex jc-center ai-center" data-check-status>
+                                                    <div class="d-flex ai-center">
+                                                        <svg style="width: 10px; height: 10px; fill: var(--color-white);"><use xlink:href="#check"></use></svg>
+                                                    </div>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="flex-row jc-spb w-100">
+                                            <p>ارسال فوری</p>
+                                            <div class="d-flex ai-center">
+                                                <img class="d-inline-block" width="24" height="24" alt="" style="object-fit: contain;" src="/media/34919c51.png">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product-filter">
+                            <div class="product-filter-title flex-col g16">
+                                <div class="flex-row jc-spb">
+                                    <div class="d-flex ai-center g8">
+                                        <p>ارسال فروشنده</p>
+                                        <img class="d-inline-block lazyloaded" width="18" height="18" alt="" style="object-fit: contain;" src="/media/ab8e1e2a.png">
+                                    </div>
+                                    <div class="d-flex ai-center">
+                                        <label for="" class="switch-btn d-flex ai-center position-rel">
+                                            <input type="checkbox" class="d-none">
+                                            <span class="d-block"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="product-filter-subtitle">
+                                    <p>ارسال مستقیم و سریع&zwnj;تر&zwnj;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-filter">
+                            <div class="product-filter-title inc-sub-item">
                                 <div class="flex-row jc-spb">
                                     <div class="d-flex ai-center"><p>محدوده قیمت</p></div>
                                     <div class="d-flex ai-center">
@@ -962,45 +1052,48 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-filter-items h-max-360 price-range flex-col g16">
-                                    <div class="flex-row jc-spb g4">
-                                        <div class="d-flex ai-center" style="color: var(--color-neutral-500); font-size: 1.7rem;"><span>از</span></div>
-                                        <div class="flex-grow-1 d-flex ai-center">
-                                            <input type="text" inputmode="numeric" value="0" class="d-block price-input" id="price-min">
-                                        </div>
-                                        <div class="d-flex ai-center">
-                                            <svg style="width: 18px; height: 18px; fill: var(--color-neutral-700);"><use xlink:href="#toman"></use></svg>
-                                        </div>
-                                    </div>
-                                    <div class="flex-row jc-spb g4">
-                                        <div class="d-flex ai-center" style="color: var(--color-neutral-500); font-size: 1.7rem;"><span>تا</span></div>
-                                        <div class="flex-grow-1 d-flex ai-center">
-                                            <input type="text" inputmode="numeric" class="d-block price-input" id="price-max" value="21,399,900">
-                                        </div>
-                                        <div class="d-flex ai-center">
-                                            <svg style="width: 18px; height: 18px; fill: var(--color-neutral-700);"><use xlink:href="#toman"></use></svg>
-                                        </div>
-                                    </div>
-                                    <div class="flex-col g16">
-                                        <div class="range-wrapper">
-                                            <div class="slider">
-                                                <div class="progress"></div>
+                            <div class="product-filter-items visibility-hid h-max-360">
+                                    <div class="product-filter-item-wrapper">
+                                        <div class="product-filter-item no-border-b price-range flex-col g16">
+                                            <div class="flex-row jc-spb g4">
+                                                <div class="d-flex ai-center" style="color: var(--color-neutral-500); font-size: 1.7rem;"><span>از</span></div>
+                                                <div class="flex-grow-1 d-flex ai-center">
+                                                    <input type="text" inputmode="numeric" value="0" class="d-block price-input" id="price-min">
+                                                </div>
+                                                <div class="d-flex ai-center">
+                                                    <svg style="width: 18px; height: 18px; fill: var(--color-neutral-700);"><use xlink:href="#toman"></use></svg>
+                                                </div>
                                             </div>
-                                            <div class="range-input-wrapper">
-                                                <input type="range" class="range-input" id="range-min" min="0" max="21399900" value="0" step="100">
-
-                                                <input type="range" class="range-input" id="range-max" min="0" max="21399900" value="21399900" step="100">
-                                              </div>
-                                        </div>
-                                        <div class="flex-row jc-spb">
-                                            <div style="color: var(--color-neutral-500); font-weight: bold; font-size: 1.2rem;">ارزانترین</div>
-                                            <div style="color: var(--color-neutral-500); font-weight: bold; font-size: 1.2rem;">گرانترین</div>
+                                            <div class="flex-row jc-spb g4">
+                                                <div class="d-flex ai-center" style="color: var(--color-neutral-500); font-size: 1.7rem;"><span>تا</span></div>
+                                                <div class="flex-grow-1 d-flex ai-center">
+                                                    <input type="text" inputmode="numeric" class="d-block price-input" id="price-max" value="21,399,900">
+                                                </div>
+                                                <div class="d-flex ai-center">
+                                                    <svg style="width: 18px; height: 18px; fill: var(--color-neutral-700);"><use xlink:href="#toman"></use></svg>
+                                                </div>
+                                            </div>
+                                            <div class="flex-col g16">
+                                                <div class="range-wrapper">
+                                                    <div class="slider">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                    <div class="range-input-wrapper">
+                                                        <input type="range" class="range-input" id="range-min" min="0" max="21399900" value="0" step="100">
+                                                        <input type="range" class="range-input" id="range-max" min="0" max="21399900" value="21399900" step="100">
+                                                      </div>
+                                                </div>
+                                                <div class="flex-row jc-spb">
+                                                    <div style="color: var(--color-neutral-500); font-weight: bold; font-size: 1.2rem;">ارزانترین</div>
+                                                    <div style="color: var(--color-neutral-500); font-weight: bold; font-size: 1.2rem;">گرانترین</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                             </div>
                         </div>
                         <div class="product-filter">
-                            <div class="product-filter-title">
+                            <div class="product-filter-title inc-sub-item">
                                 <div class="flex-row jc-spb">
                                     <div class="d-flex ai-center"><p>نوع فروشنده</p></div>
                                     <div class="d-flex ai-center">
@@ -1066,7 +1159,7 @@
                                     </div>
                                 </div>
                                 <div class="product-filter-item-wrapper flex-row">
-                                    <div class="product-filter-item w-100 flex-row">
+                                    <div class="product-filter-item w-100 flex-row no-border-b">
                                         <div class="d-flex ai-center">
                                             <label for="" class="d-flex ai-center" data-check-target>
                                                 <input type="checkbox">
@@ -1087,7 +1180,7 @@
 
                         </div>
                         <div class="product-filter">
-                            <div class="product-filter-title">
+                            <div class="product-filter-title inc-sub-item">
                                 <div class="flex-row jc-spb">
                                     <div class="d-flex ai-center"><p>نوع</p></div>
                                     <div class="d-flex ai-center">
@@ -1165,7 +1258,7 @@
                                     </div>
                                 </div>
                                 <div class="product-filter-item-wrapper flex-row">
-                                    <div class="product-filter-item w-100 flex-row">
+                                    <div class="product-filter-item w-100 flex-row no-border-b">
                                         <div class="d-flex ai-center">
                                             <label for="" class="d-flex ai-center" data-check-target>
                                                 <input type="checkbox">
@@ -1186,7 +1279,7 @@
 
                         </div>
                         <div class="product-filter">
-                            <div class="product-filter-title">
+                            <div class="product-filter-title inc-sub-item no-border-b">
                                 <div class="flex-row jc-spb">
                                     <div class="d-flex ai-center"><p>نحوه نمایش میزان شارژ باتری</p></div>
                                     <div class="d-flex ai-center">
@@ -1247,7 +1340,7 @@
                                     </div>
                                 </div>
                                 <div class="product-filter-item-wrapper flex-row">
-                                    <div class="product-filter-item w-100 flex-row">
+                                    <div class="product-filter-item w-100 flex-row no-border-b">
                                         <div class="d-flex ai-center">
                                             <label for="" class="d-flex ai-center" data-check-target>
                                                 <input type="checkbox">
@@ -1266,73 +1359,6 @@
                             </div>
 
                         </div>
-                        <div class="product-filter">
-                            <div class="product-filter-title">
-                                <div class="flex-row jc-spb">
-                                    <div class="d-flex ai-center"><p>تعداد درگاه خروجی</p></div>
-                                    <div class="d-flex ai-center">
-                                        <svg style="width: 24px; height: 24px"><use xlink:href="#expandMore"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-filter-items"></div>
-                        </div>
-                        <div class="product-filter">
-                            <div class="product-filter-title">
-                                <div class="flex-row jc-spb">
-                                    <div class="d-flex ai-center"><p>قابلیت&zwnj;های ویژه</p></div>
-                                    <div class="d-flex ai-center">
-                                        <svg style="width: 24px; height: 24px"><use xlink:href="#expandMore"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-filter-items"></div>
-                        </div>
-                        <div class="product-filter">
-                            <div class="product-filter-title">
-                                <div class="flex-row jc-spb">
-                                    <div class="d-flex ai-center"><p>نوع باتری</p></div>
-                                    <div class="d-flex ai-center">
-                                        <svg style="width: 24px; height: 24px"><use xlink:href="#expandMore"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-filter-items"></div>
-                        </div>
-                        <div class="product-filter">
-                            <div class="product-filter-title">
-                                <div class="flex-row jc-spb">
-                                    <div class="d-flex ai-center"><p>کلاس وزنی</p></div>
-                                    <div class="d-flex ai-center">
-                                        <svg style="width: 24px; height: 24px"><use xlink:href="#expandMore"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-filter-items"></div>
-                        </div>
-                        <div class="product-filter">
-                            <div class="product-filter-title">
-                                <div class="flex-row jc-spb">
-                                    <div class="d-flex ai-center"><p>محدوده ظرفیت</p></div>
-                                    <div class="d-flex ai-center">
-                                        <svg style="width: 24px; height: 24px"><use xlink:href="#expandMore"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-filter-items"></div>
-                        </div>
-                        <div class="product-filter">
-                            <div class="product-filter-title">
-                                <div class="flex-row jc-spb no-border-b">
-                                    <div class="d-flex ai-center"><p>قابلیت&zwnj;های دستگاه</p></div>
-                                    <div class="d-flex ai-center">
-                                        <svg style="width: 24px; height: 24px"><use xlink:href="#expandMore"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-filter-items"></div>
-                        </div>
-
                     </div>
                 </aside>
                 <section class="w-100">
