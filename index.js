@@ -55,7 +55,7 @@ tabSwitcher(sortItems,"active-sort",null,"click");
 
 //product filter items visibility
 //variables
-const filterTitle = document.querySelectorAll(".product-filter-title");
+const filterTitle = document.querySelectorAll(".inc-sub-item");
 const filterItems = document.querySelectorAll(".product-filter-items");
 
 for (let i = 0; i < filterTitle.length; i++) {
@@ -63,7 +63,6 @@ for (let i = 0; i < filterTitle.length; i++) {
 
     element.addEventListener("click", function(){
         filterItems[i].classList.toggle("h-max-360");
-        filterItems[i].classList.toggle("visibility-hid");
     })
     
 }
