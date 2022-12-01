@@ -78,6 +78,7 @@
 
     --box-shadow-base:0 2px 2px -2px rgba(0,0,0,.2);
     --box-shadow-item: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --box-shadow-light: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
 }
 *,
@@ -97,6 +98,18 @@ li{
 a{
     color: inherit;
     text-decoration: none;
+}
+
+.input-reset{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.input-reset:focus{
+    border: none;
+    outline: none;
+    background: none;
 }
 
 button{
@@ -232,4 +245,13 @@ button{
 
 .visibility-hid{
     visibility: hidden;
+}
+
+.show{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.position-rel{
+    position: relative;
 }
