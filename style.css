@@ -34,38 +34,52 @@ html{
     align-items: center;
 }
 
-
-.header-top .middle{
-    flex-grow: 1;
-    color: var(--color-neutral-500);
-}
-
 .search-box-display{
-    align-items: center;
     gap: 15px;
     padding: 10px;
     font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--color-neutral-500);
     background-color: var(--color-neutral-100);
     border-radius: var(--medium-radius);
     max-width: 600px;
 }
 
-.search-sign{
-    display: flex;
-    fill: var(--color-neutral-400);
-    margin-inline-start: 10px;
-
+.search-box-wrapper{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    width: 600px;
+    height: 180px;
+    border-radius: var(--medium-radius);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-light);
+    transition: all 200ms ease-in;
 }
 
-.search-box-display:last-child{
-    font-size: 12px;
-    display: flex;
-    align-items: flex-start;
+.search-box{
+    gap: 15px;
+    padding-block: 10px;
+    color: var(--color-neutral-500);
+    margin-inline: 16px;
+    border-bottom: 1px solid var(--color-blue-600);
+}
+
+.search-box input[type="text"]{
+    caret-color: var(--color-blue-600);
+}
+
+.search-box input[type="text"]::placeholder{
+    font-size: 1.2rem;
+    color: var(--color-neutral-400);
 }
 
 .header-top .left{
     margin-inline-start: auto;
 }
+
 .registration{
     align-items: center;
     gap: 10px;
@@ -405,14 +419,21 @@ html{
 }
 
 .product-filter-title{
-    padding-inline: 20px;
+    margin-inline: 20px;
+    padding-block: 12px;
+    border-bottom: solid 1px var(--color-neutral-100);
     cursor: pointer;
     font-weight: bold;
 }
 
-.product-filter-title > div:first-of-type{
-    padding-block: 12px;
+.product-filter-items{
     border-bottom: solid 1px var(--color-neutral-100);
+}
+
+.product-filter-subtitle{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: var(--color-neutral-500);
 }
 
 
@@ -421,6 +442,7 @@ html{
     max-height: 0;
     padding-top: 4px;
     padding-inline: 20px;
+    border-bottom: solid 1px var(--color-neutral-100);
     overflow-y: auto;
     transition: 
     max-height 250ms ease-in,
@@ -429,6 +451,11 @@ html{
 
 .product-filter-item-wrapper{
     cursor: default;
+}
+
+.product-filter-item{
+    border-bottom: solid 1px var(--color-neutral-100);
+    padding: 12px 0 12px 12px;
 }
 
 .product-filter-items-search{
@@ -460,14 +487,10 @@ html{
     font-size: 1.5rem;
 }
 
-.product-filter-item div:has(p){
-    padding: 12px 0 12px 12px;
-    border-bottom: solid 1px var(--color-neutral-100);
-}
-
 .product-filter-item > div:last-of-type p:first-of-type{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--color-neutral-700);
+    font-weight: bold;
 }
 
 .product-filter-item .brand-eng-name{
@@ -506,9 +529,26 @@ html{
     border-radius: 50%;
 }
 
-.price-range{
-    margin-top: 8px;
+.switch-btn{
+    width: 40px;
+    height: 20px;
+    border: 2px solid var(--color-neutral-400);
+    border-radius: 26px;
+    cursor: pointer;
 }
+
+.switch-btn span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 2.5px;
+    left: 2.5px;
+    border-radius: 50%;
+    background-color: var(--color-neutral-400);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
 
 .price-range > div > div:has(input[type='text']){
     border-bottom: 1px solid var(--color-neutral-200);
@@ -696,3 +736,5 @@ html{
 .gold-circle{
     background-color: var(--color-gold);
 }
+
+/* has */
