@@ -1,5 +1,16 @@
 console.log("Hello, from JavaScript!");
 
+//header search box
+//variables
+const searchDisplay = document.querySelector(".search-box-display");
+const searchWrapper = document.querySelector(".search-box-wrapper");
+
+searchDisplay.addEventListener("click", () =>{
+    searchWrapper.classList.add("show");
+})
+
+
+
 //header nav special hover effect
 //variables
 const redLine = document.querySelector(".red-line");
@@ -7,7 +18,6 @@ const navItems = document.querySelectorAll(".nav-right-item");
 
 setTimeout(() => {
     navItems.forEach(navItem =>{
-        console.log(navItem.offsetLeft);
         
         navItem.addEventListener("mouseover", () =>{
             let redLineWidth = navItem.offsetWidth;
@@ -63,6 +73,7 @@ for (let i = 0; i < filterTitle.length; i++) {
 
     element.addEventListener("click", function(){
         filterItems[i].classList.toggle("h-max-360");
+        element.classList.toggle("no-border-b");
     })
     
 }
@@ -80,6 +91,17 @@ for (let i = 0; i < dataCheck.length; i++) {
     
 }
 
+//product filter switch btn
+//variables
+const switchBtn = document.querySelector(".switch-btn");
+const switchHandler = document.querySelector(".switch-btn span");
+console.log(switchHandler);
+
+//function
+switchBtn.addEventListener("click",() =>{
+    switchBtn.classList.toggle("switch-btn-on");
+})
+
 
 
 //price range handler
@@ -93,14 +115,7 @@ const maxValue = 21399900;
 const minValue = 0;
 const sliderProgress = document.querySelector(".slider .progress")
 
-// thousand seperator
-priceInputs.forEach(input =>{
-    input.addEventListener('input', ()=>{
-        const inputVal = input.value.replace(/[^0-9]/g, "");
-        const inputValNum = +inputVal;
-        input.value = inputValNum.toLocaleString();    
-    })
-})
+
 
 
 
@@ -139,7 +154,13 @@ maxRange.addEventListener("input", function(){
 //changing range input based on price input
 
 minPrice.addEventListener("input", function(){
-    const minPriceVal = minPrice.value.replace(/[^0-9]/g, "");
+    let minPriceVal = minPrice.value.replace(/[^0-9]/g, "");
+    const maxPriceVal = maxPrice.value.replace(/[^0-9]/g, "");
+    const priceValGap = maxPriceVal - minPriceVal;
+    if (priceValGap < 0) {
+        minPrice.value = maxPriceVal;
+        minPriceVal = maxPriceVal;
+    }
     minRange.value = minPriceVal;
     let rightD = minPriceVal * 100 / maxValue;
     
@@ -151,7 +172,13 @@ minPrice.addEventListener("input", function(){
 })
 
 maxPrice.addEventListener("input", function(){
-    const maxPriceVal = maxPrice.value.replace(/[^0-9]/g, "");
+    const minPriceVal = minPrice.value.replace(/[^0-9]/g, "");
+    let maxPriceVal = maxPrice.value.replace(/[^0-9]/g, "");
+    const priceValGap = maxPriceVal - minPriceVal;
+    if (priceValGap < 0) {
+        maxPrice.value = minPriceVal;
+        maxPriceVal = minPriceVal;
+    }
     maxRange.value = maxPriceVal;
     let leftD = -((maxPriceVal * 100 / maxValue) - 100);
     
@@ -162,6 +189,14 @@ maxPrice.addEventListener("input", function(){
     }
 })
 
+// thousand seperator
+priceInputs.forEach(input =>{
+    input.addEventListener('input', ()=>{
+        const inputVal = input.value.replace(/[^0-9]/g, "");
+        const inputValNum = +inputVal;
+        input.value = inputValNum.toLocaleString();    
+    })
+})
 
 
 // no border on the left side of products at the left edge
