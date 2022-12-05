@@ -420,7 +420,7 @@ html{
 
 .product-filter-title{
     margin-inline: 20px;
-    padding-block: 12px;
+    padding-block: 14px;
     border-bottom: solid 1px var(--color-neutral-100);
     cursor: pointer;
     font-weight: bold;
@@ -539,14 +539,23 @@ html{
 
 .switch-btn span{
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     top: 2.5px;
     left: 2.5px;
     border-radius: 50%;
     background-color: var(--color-neutral-400);
     cursor: pointer;
-    transition: all 200ms ease-in;
+}
+
+.switch-btn-on{
+    background-color: var(--color-blue-600);
+    border: 2px solid transparent;
+}
+
+.switch-btn-on span{
+    right: 2.5px;
+    background-color: var(--color-white);
 }
 
 
@@ -613,6 +622,11 @@ html{
     width: 20px;
     border-radius: 50%;
     pointer-events: auto;
+}
+
+.range-input-wrapper input[type="range"]::-webkit-slider-thumb:active{
+    box-shadow:  rgba(255, 255, 255, 0.6) 1px 1px 5px inset;
+    cursor: pointer;
 }
 
 /* products */
