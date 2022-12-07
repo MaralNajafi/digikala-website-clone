@@ -95,7 +95,6 @@ for (let i = 0; i < dataCheck.length; i++) {
 //variables
 const switchBtn = document.querySelector(".switch-btn");
 const switchHandler = document.querySelector(".switch-btn span");
-console.log(switchHandler);
 
 //function
 switchBtn.addEventListener("click",() =>{
