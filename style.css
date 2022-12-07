@@ -52,7 +52,7 @@ html{
     z-index: 3;
     top: 0;
     width: 600px;
-    height: 180px;
+    height: auto;
     border-radius: var(--medium-radius);
     background-color: var(--color-white);
     box-shadow: var(--box-shadow-light);
@@ -62,8 +62,8 @@ html{
 .search-box{
     gap: 15px;
     padding-block: 10px;
-    color: var(--color-neutral-500);
     margin-inline: 16px;
+    color: var(--color-neutral-500);
     border-bottom: 1px solid var(--color-blue-600);
 }
 
@@ -74,6 +74,60 @@ html{
 .search-box input[type="text"]::placeholder{
     font-size: 1.2rem;
     color: var(--color-neutral-400);
+}
+
+.search-box-wrapper > div:last-of-type{
+    margin: 12px 0 16px 0;
+}
+
+.img-ad{
+    margin-top: 16px;
+    margin-inline: 16px;
+}
+
+.popular-search-wrapper{
+    overflow-x: hidden;
+}
+
+
+.popular-search-items{
+    transform: translateX(-50px);
+    margin-inline: 8px;
+}
+
+.popular-search-item{
+    border: 1px solid var(--color-neutral-200);
+    border-radius: 100px;
+    padding-block: 8px;
+    padding-inline: 12px 4px;
+    margin-inline-end: 8px;
+    cursor: pointer;
+}
+
+.search-swip{
+    position: absolute;
+    z-index: 2;
+    background-color: var(--color-white);
+    top: 5px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid var(--color-neutral-200);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow-light);
+    transition: all 250ms;
+}
+
+.search-swip svg:hover{
+    fill: var(--color-neutral-700) !important;
+    cursor: pointer;
+}
+
+.swip-left{
+    left: 8px;
+}
+
+.swip-right{
+    right: 8px;
 }
 
 .header-top .left{
@@ -750,5 +804,3 @@ html{
 .gold-circle{
     background-color: var(--color-gold);
 }
-
-/* has */
