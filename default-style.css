@@ -255,3 +255,19 @@ button{
 .position-rel{
     position: relative;
 }
+
+.b700-15{
+    color: var(--color-neutral-700);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.b700-14{
+    color: var(--color-neutral-700);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.w-space-no-wrap{
+    white-space: nowrap;
+}
