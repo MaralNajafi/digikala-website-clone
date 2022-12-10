@@ -5,8 +5,9 @@ html{
     position: relative;
 }
 .anouncement{
-    margin-bottom: 4px;
     z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
 .main-header{
@@ -15,7 +16,8 @@ html{
     width: 100%;
     background-color: var(--color-white);
     z-index: 1;
-    /* position: fixed; */
+    position: sticky;
+    top: 60px;
 }
 
 
@@ -234,7 +236,7 @@ html{
 .categories-sub-menu{
     position: absolute;
     right: 0;
-    top: 35px;
+    top: 34px;
     z-index: 1;
     width: auto;
     display: none;
@@ -407,6 +409,7 @@ html{
 .main-content{
     padding: var(--global-padding);
     gap: 16px;
+    position: relative;
 }
 
 .sorting-wrapper{
@@ -445,6 +448,8 @@ html{
 .main-content aside{
     height: auto;
     align-self: flex-start;
+    position: sticky;
+    top: 0px;
 }
 
 .product-filters{
