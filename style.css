@@ -236,7 +236,7 @@ html{
 .categories-sub-menu{
     position: absolute;
     right: 0;
-    top: 34px;
+    top: 33.5px;
     z-index: 1;
     width: auto;
     display: none;
@@ -385,9 +385,10 @@ html{
     left: 0;
     width: 0;
     height: 1.5px;
-    background-color: var(--color-brand);
+    background-color: var(--color-brand-light);
     border-radius: 16px;
     transition: all 250ms;
+    pointer-events: none;
 }
 
 
