@@ -156,10 +156,18 @@ minPrice.addEventListener("input", function(){
     let minPriceVal = minPrice.value.replace(/[^0-9]/g, "");
     const maxPriceVal = maxPrice.value.replace(/[^0-9]/g, "");
     const priceValGap = maxPriceVal - minPriceVal;
+
+    //validation 
+    if (minPriceVal == "") {
+        minPriceVal = 0;
+    }
+ 
     if (priceValGap < 0) {
         minPrice.value = maxPriceVal;
         minPriceVal = maxPriceVal;
     }
+
+
     minRange.value = minPriceVal;
     let rightD = minPriceVal * 100 / maxValue;
     
@@ -174,10 +182,18 @@ maxPrice.addEventListener("input", function(){
     const minPriceVal = minPrice.value.replace(/[^0-9]/g, "");
     let maxPriceVal = maxPrice.value.replace(/[^0-9]/g, "");
     const priceValGap = maxPriceVal - minPriceVal;
+
+    //validation
+    if (maxPriceVal == "") {
+        maxPriceVal = 0;
+    }
+
     if (priceValGap < 0) {
         maxPrice.value = minPriceVal;
         maxPriceVal = minPriceVal;
     }
+
+    
     maxRange.value = maxPriceVal;
     let leftD = -((maxPriceVal * 100 / maxValue) - 100);
     
@@ -187,6 +203,7 @@ maxPrice.addEventListener("input", function(){
         sliderProgress.style.left = `${leftD}%`;
     }
 })
+
 
 // thousand seperator
 priceInputs.forEach(input =>{
