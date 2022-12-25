@@ -177,7 +177,7 @@ button{
 }
 
 .d-block{
-    display: block;
+    display: block !important;
 }
 
 .d-inline-block{
