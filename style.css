@@ -95,6 +95,7 @@ html{
 .popular-search-items{
     transform: translateX(-50px);
     margin-inline: 8px;
+    transition: all 0.3s ease-out;
 }
 
 .popular-search-item{
@@ -116,7 +117,6 @@ html{
     border: 1px solid var(--color-neutral-200);
     border-radius: 50px;
     box-shadow: var(--box-shadow-light);
-    transition: all 250ms;
 }
 
 .search-swip svg:hover{
@@ -129,6 +129,7 @@ html{
 }
 
 .swip-right{
+    display: none;
     right: 8px;
 }
 
@@ -450,7 +451,7 @@ html{
     height: auto;
     align-self: flex-start;
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
 .product-filters{
