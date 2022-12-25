@@ -9,6 +9,32 @@ searchDisplay.addEventListener("click", () =>{
     searchWrapper.classList.add("show");
 })
 
+//swip popular search
+//variables
+const popularSearchItems = document.querySelector(".popular-search-items");
+const leftSwip = document.querySelector(".swip-left");
+const rightSwip = document.querySelector(".swip-right");
+let translateStyleValue = -50;
+
+//function
+leftSwip.addEventListener("click", () =>{
+    translateStyleValue+= 100;
+    if (translateStyleValue > -50) {
+        rightSwip.classList.add('d-block');
+    }
+    popularSearchItems.style.transform = `translateX(${translateStyleValue}px)`
+})
+
+rightSwip.addEventListener("click", () =>{
+    translateStyleValue-= 100;
+    if (translateStyleValue < -50) {
+        translateStyleValue = -50;
+        
+    }else if (translateStyleValue == -50) {
+        rightSwip.classList.remove('d-block');
+    }
+    popularSearchItems.style.transform = `translateX(${translateStyleValue}px)`
+})
 
 
 //header nav special hover effect
@@ -115,9 +141,6 @@ const minValue = 0;
 const sliderProgress = document.querySelector(".slider .progress")
 
 
-
-
-
 //changing price input based on range input
 
 minRange.addEventListener("input", function(){
@@ -204,13 +227,13 @@ maxPrice.addEventListener("input", function(){
     }
 })
 
-
 // thousand seperator
 priceInputs.forEach(input =>{
     input.addEventListener('input', ()=>{
         const inputVal = input.value.replace(/[^0-9]/g, "");
         const inputValNum = +inputVal;
-        input.value = inputValNum.toLocaleString();    
+        input.value = inputValNum.toLocaleString();
+
     })
 })
 
