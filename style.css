@@ -4,8 +4,20 @@ html{
 .main-container{
     position: relative;
 }
-.anouncement{
+
+.backdrop{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(43, 45, 83, 0.509);
     z-index: 1;
+}
+
+.anouncement{
+    z-index: 2;
     position: sticky;
     top: 0;
 }
