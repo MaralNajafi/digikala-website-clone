@@ -1,4 +1,7 @@
 console.log("Hello, from JavaScript!");
+//variables
+const body = document.body;
+const backdrop = document.querySelector(".backdrop");
 
 //header search box
 //variables
@@ -7,7 +10,17 @@ const searchWrapper = document.querySelector(".search-box-wrapper");
 
 searchDisplay.addEventListener("click", () =>{
     searchWrapper.classList.add("show");
+    backdrop.classList.add("d-block");
+    body.style.overflow = "hidden";
 })
+
+window.onclick = function(event) {
+    if (event.target == backdrop ) {
+        backdrop.classList.remove("d-block");
+        searchWrapper.classList.remove("show");
+        body.style.overflow = "auto";
+    }
+  }
 
 //swip popular search
 //variables
@@ -57,6 +70,21 @@ setTimeout(() => {
     
     })
 }, 0);
+
+//categories hover
+//variables
+const categories = document.querySelector(".categories");
+
+categories.addEventListener("mouseover", () =>{
+    backdrop.classList.add("d-block");
+    body.style.overflow = "hidden";
+    searchWrapper.classList.remove("show");
+})
+
+categories.addEventListener("mouseout", () =>{
+    backdrop.classList.remove("d-block");
+    body.style.overflow = "auto";
+})
 
 
 //tabSwitcher variables
